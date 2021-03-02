@@ -3,7 +3,6 @@
 
 namespace Kongstone\Tmdb;
 
-
 class Factory
 {
     protected function newPendingRequest(): PendingRequest

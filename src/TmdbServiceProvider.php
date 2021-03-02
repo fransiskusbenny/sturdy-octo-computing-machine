@@ -2,9 +2,9 @@
 
 namespace Kongstone\Tmdb;
 
+use Kongstone\Tmdb\Commands\TmdbCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kongstone\Tmdb\Commands\TmdbCommand;
 
 class TmdbServiceProvider extends PackageServiceProvider
 {

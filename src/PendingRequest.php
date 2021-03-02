@@ -32,8 +32,8 @@ class PendingRequest
         return Http::baseUrl($this->baseUrl)
             ->withOptions([
                 'query' => [
-                    'api_key' => config('tmdb.api_key')
-                ]
+                    'api_key' => config('tmdb.api_key'),
+                ],
             ])
             ->send($method, $url, $options)
             ->throw();

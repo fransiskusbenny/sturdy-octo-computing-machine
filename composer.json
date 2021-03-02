@@ -1,23 +1,24 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "kongstone/sturdy-octo-computing-machine",
+    "description": "Learn how to publish a php package",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "kongstone",
+        "sturdy-octo-computing-machine"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/kongstone/sturdy-octo-computing-machine",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Benny Halim",
+            "email": "fransiskusbennyhalim@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.1",
-        "illuminate/contracts": "^8.0"
+        "php": "^7.4",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/contracts": "^8.0",
+        "spatie/laravel-package-tools": "^1.1"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -27,13 +28,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Kongstone\\Tmdb\\": "src",
+            "Kongstone\\Tmdb\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Kongstone\\Tmdb\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Kongstone\\Tmdb\\TmdbServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Tmdb": "Kongstone\\Tmdb\\TmdbFacade"
             }
         }
     },

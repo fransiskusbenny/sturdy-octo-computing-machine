@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Kongstone\Tmdb\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TmdbCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'tmdb';
 
     public $description = 'My command';
 
